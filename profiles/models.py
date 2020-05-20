@@ -7,6 +7,7 @@ class MenteeData(models.Model):
     )
     your_name = models.CharField(max_length=100)
     contact_number = models.CharField(max_length=10)
+    parents_contact_number = models.CharField(max_length=10)
     coaching_name = models.CharField(max_length=1000)
     school_name = models.CharField(max_length=1000)
     location = models.CharField(max_length=100)

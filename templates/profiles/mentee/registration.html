@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>MENTEE REGISTER || MAVEN MENTORS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- <link rel="icon" type="image/png" href="/static/accounts/images/icons/favicon.ico" /> -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="/static/accounts/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/accounts/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/accounts/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/accounts/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="/static/accounts/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/accounts/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/accounts/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/accounts/vendor/daterangepicker/daterangepicker.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/accounts/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/static/accounts/css/main.css">
+	<link rel="stylesheet" href="/static/base/css/style.css">
+	<link rel="shortcut icon" href="/static/assets/logomini.png">
+
+	
+
+	
+</head>
+
+<style>
+	.already_user {
+		margin-top: 9px;
+		text-align: right;
+		width: 100%;
+	}
+	#id_college_year{
+		padding: 3px;
+		border: none;
+	}
+
+	#id_college_year:focus{
+		outline: none;
+	}
+</style>
+<body>
+	{% include "profiles/parts/navbarHome.html" %}
+
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-form-title" style="background-image: url(/static/assets/signup.png);">
+					<span class="login100-form-title-1">
+						REGISTRATION
+					</span>
+				</div>
+
+				<form class="login100-form validate-form" method="POST" action="/mentee/registration/">
+					{% csrf_token %}
+					{% if form.errors or error_msg %}
+					<div class="errorMsg">
+						<td style="color: red">
+							{{error_msg}}
+							{% for field in form.visible_fields %}
+								{{ field.errors }}
+							{% endfor %}
+						</td>
+					</div>
+					{% endif %}
+
+					{% for field in form.visible_fields %}
+					<tr>
+						<div class="wrap-input100 validate-input m-b-26" data-validate="">
+							<span class="label-input100">{{ field.label_tag }}</span>
+							{{ field }}
+							<span class="focus-input100"></span>
+						</div>
+
+					</tr>
+					{% endfor %}
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							REGISTER
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	{% include "profiles/parts/footerHome.html" %}
+
+
+	
+	<!-- <script src="/static/accounts/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/static/accounts/vendor/animsition/js/animsition.min.js"></script>
+	<script src="/static/accounts/vendor/bootstrap/js/popper.js"></script>
+	<script src="/static/accounts/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/static/accounts/vendor/select2/select2.min.js"></script>
+	<script src="/static/accounts/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/static/accounts/vendor/daterangepicker/daterangepicker.js"></script> -->
+	<!-- <script src="/static/accounts/vendor/countdowntime/countdowntime.js"></script> -->
+	<script src="/static/accounts/js/main.js"></script>
+</body>
+
+</html>

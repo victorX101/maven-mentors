@@ -9,8 +9,8 @@ class MenteeForm(forms.ModelForm):
         ('after', 'Mentor Needed After JEE' ),
     )
     your_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Elon Musk'}))
-    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'1234567890'}), validators=[phone_validator])
-    p_contact_number = forms.CharField(max_length=10,label="Parents contact number", widget=forms.NumberInput(attrs={'class':'input100','placeholder':'1234567890'}), validators=[phone_validator])
+    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'1234567890'})), #validators=[phone_validator])
+    parents_contact_number = forms.CharField(max_length=10,label="Parents contact number", widget=forms.NumberInput(attrs={'class':'input100','placeholder':'1234567890'})), #validators=[phone_validator])
     coaching_name = forms.CharField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':''}))
     school_name = forms.CharField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':''}))
     location = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'City'}))
@@ -23,7 +23,7 @@ class MenteeForm(forms.ModelForm):
         fields = [
             'your_name',
             'contact_number',
-            'p_contact_number',
+            'parents_contact_number',
             'coaching_name',
             'school_name',
             'location',
@@ -39,7 +39,7 @@ class MentorForm(forms.ModelForm):
         (False, 'No' ),
     )
     your_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Elon Musk'}))
-    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'123467890'}), validators=[phone_validator])
+    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'123467890'})), # validators=[phone_validator])
     college = forms.CharField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':''}))
     email = forms.EmailField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':'hello@example.com'}))
     location = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Ludhiana'}))
@@ -65,7 +65,7 @@ class MentorForm(forms.ModelForm):
 
 class AmbassadorForm(forms.ModelForm):
     your_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Elon Musk'}))
-    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'123467890'}), validators=[phone_validator])
+    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'123467890'})), #validators=[phone_validator])
     college = forms.CharField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':''}))
     email = forms.EmailField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':'hello@example.com'}))
     location = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Ludhiana'}))
