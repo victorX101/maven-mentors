@@ -15,4 +15,17 @@ def menteereg(request):
             return render(request,'profiles/message.html')
     else:
         form = forms.MenteeForm()
-        return render(request,'profiles/mentee/registration.html',context={'form':form}); 
+        return render(request,'profiles/mentee/registration.html',context={'form':form})
+
+def mentorreg(request):
+    if(request.method == 'POST'):
+        form = forms.MentorForm(request.POST)
+        if(form.is_valid()):
+            form.save()
+            return render(request,'profiles/message.html')
+    else:
+        form = forms.MentorForm()
+        return render(request,'profiles/mentor/registration.html',context={'form':form})
+
+def mentorguide(request):
+    return render(request,'profiles/mentor/guidelines.html')

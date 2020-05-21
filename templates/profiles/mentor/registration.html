@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-	<title>MENTEE REGISTER || MAVEN MENTORS</title>
+	<title>MENTOR REGISTER || MAVEN MENTORS</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!-- <link rel="icon" type="image/png" href="/static/accounts/images/icons/favicon.ico" /> -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<!-- <link rel="stylesheet" type="text/css" href="/static/accounts/vendor/bootstrap/css/bootstrap.min.css">
@@ -25,9 +25,9 @@
 	<link rel="stylesheet" href="/static/base/css/style.css">
 	<link rel="shortcut icon" href="/static/assets/logomini.png">
 
-	
 
-	
+
+
 </head>
 
 <style>
@@ -36,42 +36,73 @@
 		text-align: right;
 		width: 100%;
 	}
-	#id_college_year{
+
+	#id_college_year {
 		padding: 3px;
 		border: none;
 	}
 
-	#id_college_year:focus{
+	#id_college_year:focus {
 		outline: none;
 	}
-</style>
-<body>
-	{% include "profiles/parts/navbarHome.html" %}
 
+	.label_how_mentor {
+		font-size: 15px;
+		color: black;
+		line-height: 1.2;
+		margin-bottom: 9px;
+	}
+
+	.field_how_mentor {
+		font-size: 15px;
+		color: black;
+		line-height: 1.2;
+		margin-bottom: 9px;
+		text-align: left;
+	}
+
+	.how_mentor_wrapper{
+		margin-bottom: 15px;
+	}
+</style>
+
+<body>
+	{% include "main/navbar.html" %}
 
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(/static/assets/signup.png);">
+				<div class="login100-form-title" style="background-image: url(/static/accounts/images/signup.png);">
 					<span class="login100-form-title-1">
-						REGISTRATION
+						MENTOR APPLICATION
 					</span>
 				</div>
 
-				<form class="login100-form validate-form" method="POST" action="/mentee/registration/">
+				<form class="login100-form validate-form" method="POST" action="/c/mentor/registration/">
 					{% csrf_token %}
 					{% if form.errors or error_msg %}
 					<div class="errorMsg">
 						<td style="color: red">
 							{{error_msg}}
 							{% for field in form.visible_fields %}
-								{{ field.errors }}
+							{{ field.errors }}
 							{% endfor %}
 						</td>
 					</div>
 					{% endif %}
 
 					{% for field in form.visible_fields %}
+					{% if field.name == 'how_mentor' %}
+
+					<tr>
+						<div class="row how_mentor_wrapper" data-validate="">
+							<span class="label_how_mentor col-sm-10">{{ field.label_tag }}</span>
+							{{ field }}
+							<!-- <span class="field_how_mentor col-sm-12"></span> -->
+						</div>
+					</tr>
+					{% else %}
+
 					<tr>
 						<div class="wrap-input100 validate-input m-b-26" data-validate="">
 							<span class="label-input100">{{ field.label_tag }}</span>
@@ -80,28 +111,31 @@
 						</div>
 
 					</tr>
+
+					{% endif %}
+
 					{% endfor %}
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
-							REGISTER
+							APPLY
 						</button>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	{% include "profiles/parts/footerHome.html" %}
+	{% include "main/footerHome.html" %}
 
 
-	
-	<!-- <script src="/static/accounts/vendor/jquery/jquery-3.2.1.min.js"></script>
+
+	<script src="/static/accounts/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="/static/accounts/vendor/animsition/js/animsition.min.js"></script>
 	<script src="/static/accounts/vendor/bootstrap/js/popper.js"></script>
 	<script src="/static/accounts/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="/static/accounts/vendor/select2/select2.min.js"></script>
 	<script src="/static/accounts/vendor/daterangepicker/moment.min.js"></script>
 	<script src="/static/accounts/vendor/daterangepicker/daterangepicker.js"></script>
-	<script src="/static/accounts/vendor/countdowntime/countdowntime.js"></script> -->
+	<script src="/static/accounts/vendor/countdowntime/countdowntime.js"></script>
 	<script src="/static/accounts/js/main.js"></script>
 </body>
 
