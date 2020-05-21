@@ -39,12 +39,12 @@ class MentorForm(forms.ModelForm):
         (False, 'No' ),
     )
     your_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Elon Musk'}))
-    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'123467890'})), # validators=[phone_validator])
+    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'123467890'})) # validators=[phone_validator])
     college = forms.CharField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':''}))
     email = forms.EmailField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':'hello@example.com'}))
     location = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Ludhiana'}))
     why_mentor = forms.CharField(max_length=10000, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Why do you think you will be a good mentor?'}))
-    linkdin_id = forms.URLField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Leave empty if no linkedin profile else paste Profile link'}),required=False)
+    linkedin_id = forms.URLField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Leave empty if no linkedin profile else paste Profile link'}),required= False)
     how_mentor=forms.ChoiceField(widget=forms.Select(attrs={'class':'field_how_mentor','placeholder':'Year'}),choices=CHOICES, label="Will you be able to help a newbie in learning programming?" )
 
 
@@ -65,7 +65,7 @@ class MentorForm(forms.ModelForm):
 
 class AmbassadorForm(forms.ModelForm):
     your_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Elon Musk'}))
-    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'123467890'})), #validators=[phone_validator])
+    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'123467890'})) #validators=[phone_validator])
     college = forms.CharField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':''}))
     email = forms.EmailField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':'hello@example.com'}))
     location = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Ludhiana'}))

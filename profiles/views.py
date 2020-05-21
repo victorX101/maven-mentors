@@ -29,3 +29,13 @@ def mentorreg(request):
 
 def mentorguide(request):
     return render(request,'profiles/mentor/guidelines.html')
+
+def carreg(request):
+    if(request.method == 'POST'):
+        form = forms.AmbassadorForm(request.POST)
+        if(form.is_valid()):
+            form.save()
+            return render(request,'profiles/message.html')
+    else:
+        form = forms.AmbassadorForm()
+        return render(request,'profiles/ambassador/registration.html',context={'form':form})    
