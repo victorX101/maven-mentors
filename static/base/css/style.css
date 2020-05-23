@@ -30,7 +30,9 @@ body:not(i){
 .navbar {
   background: linear-gradient(to right, #1723b1, #58f0ff);
   padding: 0 !important;
+  /* color:  #1e4dcf; */
 }
+
 /* Logo resize */
 .navbar-brand img {
   height: 4rem;
@@ -42,9 +44,6 @@ body:not(i){
 .navbar-nav li {
   padding: 0 1rem;
 }
-.navbar-nav li {
-  padding: 0 1rem;
-}
 .navbar-nav .nav-item .nav-link {
   color: #fff !important;
   font-weight: 600;
@@ -52,7 +51,7 @@ body:not(i){
   text-align: left;
 }
 .navbar-nav .nav-item .nav-link:hover {
-  color: #1723b1 !important;
+  color: #fff !important;
 }
 .fa-bars {
   color: #fff !important;
@@ -68,10 +67,16 @@ body:not(i){
   color: #fff;
   padding-top: 5%;
 }
+.banner-row{
+  padding-top: 0;
+}
 .promo-title {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-top: 1em;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: 50px;
+  padding: 0 15px;
 }
 .join-title {
   font-size: 1.44rem;
@@ -83,6 +88,7 @@ body:not(i){
   color: #58f0ff;
   text-decoration: none !important;
 }
+.btn-register
 .play-btn {
   width: 45px;
   margin: 20px 0;
@@ -100,7 +106,8 @@ body:not(i){
   text-decoration: none !important;
 }
 .img-fluid {
-  margin-top: 4rem;
+  height: auto;
+  padding-left: 40px;
 }
 .bottom-img {
   width: 100%;
@@ -415,24 +422,24 @@ body:not(i){
       min-width: 70px;
       width: auto;
       font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
       cursor: pointer;
       font-size: 16px;
-      text-transform: uppercase;
       opacity: 1;
       text-align: center;
       display: inline-flex;
       -webkit-box-align: center;
       align-items: center;
       -webkit-box-pack: center;
-      justify-content: center;
-      background: rgb(255, 107, 84) !important;
-      border-width: 1px;
+      background: rgb(219, 74, 52) !important;
+      border-width: 2px;
       border-style: solid;
-      border-color: rgb(255, 107, 84);
+      border-color: rgb(255, 255, 255);
       border-image: initial;
       border-radius: 3px;
       outline: none;
       padding: 16px 32px;
+      box-shadow: 2px 2px #888;
   }
 
   .btn-register:hover {

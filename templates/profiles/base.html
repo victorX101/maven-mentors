@@ -8,9 +8,9 @@
   <title>Maven Mentors | Home</title>
   <link rel="stylesheet" href="/static/base/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="/static/assets/logomini.png">
 </head>
@@ -18,18 +18,18 @@
   {% include "profiles/parts/navbarHome.html" %}
 
   <section class="banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12" style="text-align: center">
-          <p class="promo-title">Connect to the best Mentors to help you explore different fields and learn new skills.
+    <div class="container-fluid">
+      <div class="row banner-row" style="padding-bottom: 12.5%;">
+        <div class="offset-md-1"></div>
+        <div class="col-md-4 align-self-center pt-5" style="text-align: center">
+          <p class="promo-title">Connect to the best of Mentors to help you explore different fields and learn new skills.
           </p>
           <a href="{% url 'profiles:menteereg' %}" class="btn-register"
-            style="background-color: transparent; font-size: 20 px;">REGISTER</a>
+            style="background-color: transparent; font-size: 20 px;">START 3 DAY FREE TRIAL</a>
+          </div>
+          <div class="offset-md-1"></div>
+            <img src="/static/base/images/bane_opt (1).png" class="img-fluid col-md-6 pt-5 pt-md-0 pr-5 pl-5 pl-md-0" class="img-fluid">
         </div>
-        <!-- <div class="col-md-6" >
-          <img src="/static/base/svg/undraw_email_campaign_qa8y.svg" alt="" class="img-fluid">
-        </div> -->
-      </div>
     </div>
     <!--- Background wave Hero ---->
     <img src="/static/base/images/ground@-min.png" class="bottom-img" alt="" id="register">
@@ -100,6 +100,19 @@
   <!-- <script> -->
     <!-- var scroll = new SmoothScroll('a[href*="#"]'); -->
   <!-- </script> -->
+  <!-- <a href="https://www.freepik.com/free-photos-vectors/people">People vector created by pch.vector - www.freepik.com</a> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <script>
+    $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll == 0){
+        $('.navbar').css('background', 'linear-gradient(to right, #1723b1, #58f0ff)');
+    } else{
+        $('.navbar').css('background', '#1e4dcf');
+    }
+  });
+</script>
 </body>
 
 </html>
