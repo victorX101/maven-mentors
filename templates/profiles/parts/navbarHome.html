@@ -2,7 +2,7 @@
 <section id="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/">
-            <img src="/static/assets/logof.png" style="height: 9vh; padding-left: 3vh;">
+            <img src="/static/assets/logof.png" style="padding-left: 3vh;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,14 +11,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'profiles:menteereg' %}">REGISTER</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{% url 'profiles:mentorguide' %}">OUR MENTORS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'profiles:mentorguide' %}">BECOME A MENTOR</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'profiles:menteereg' %}">REGISTER</a>
-                </li>
+                
             </ul>
         </div>
     </nav>

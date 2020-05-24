@@ -28,3 +28,16 @@
     <br>
   </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script>
+  $(window).scroll(function(){
+  var scroll = $(window).scrollTop();
+  if(scroll == 0){
+      $('.navbar').css('background', 'linear-gradient(to right, #1723b1, #58f0ff)');
+  } else{
+      $('.navbar').css('background', '#0686E4');
+      $('.navbar-brand img').animate({height : "3rem"},400);
+  }
+});
+</script>

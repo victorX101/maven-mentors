@@ -14,10 +14,10 @@
 *:not(i){
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Nunito Sans', sans-serif !important;
 }
 body:not(i){
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Nunito Sans', sans-serif !important;
   background-color: #888;
   -webkit-font-smoothing: antialiased;
 }
@@ -30,19 +30,20 @@ body:not(i){
 .navbar {
   background: linear-gradient(to right, #1723b1, #58f0ff);
   padding: 0 !important;
-  /* color:  #1e4dcf; */
+  transition: all;
 }
 
 /* Logo resize */
 .navbar-brand img {
-  height: 4rem;
+  height: 3.5rem;
   padding-left: 2rem;
 }
 .navbar-nav {
-  margin-right: 3rem;
+  margin-right: 1rem;
+  position: relative;
 }
 .navbar-nav li {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 .navbar-nav .nav-item .nav-link {
   color: #fff !important;
@@ -50,9 +51,10 @@ body:not(i){
   float: right;
   text-align: left;
 }
-.navbar-nav .nav-item .nav-link:hover {
-  color: #fff !important;
+.navbar-nav .nav-item .nav-link:hover{
+  color: #1723b1 !important;
 }
+
 .fa-bars {
   color: #fff !important;
   font-size: 25px !important;
@@ -69,14 +71,27 @@ body:not(i){
 }
 .banner-row{
   padding-top: 0;
+  height: auto;
+  padding-bottom: 12.5%;
 }
+
 .promo-title {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.4;
   padding-top: 50px;
   padding: 0 15px;
+}
+@media only screen and (max-width:992px)
+{
+  .banner-row{
+    padding-bottom: 10.5%;
+  }
+  .promo-title{
+    line-height: 1.2;
+    font-size: 2.2rem;
+  }
 }
 .join-title {
   font-size: 1.44rem;
@@ -112,7 +127,13 @@ body:not(i){
 .bottom-img {
   width: 100%;
 }
+
+
+
 /* ---------- Services --------- */
+
+
+
 #services {
   padding: 50px 0;
 }
@@ -138,8 +159,9 @@ body:not(i){
   display: block;
   border-radius: 70px;
   transform: translateY(23px);
+  margin-bottom: 20px;
 }
-#services .btn-primary {
+#services .bn-primary {
   box-shadow: none;
   padding: 8px 25px;
   border: none;
@@ -198,9 +220,19 @@ body:not(i){
   transform: scale(1.2);
 }
 #about {
-  background-color: #f8f9fa;
+  background-color: #fff;
   padding-bottom: 3rem;
   padding-top: 3rem;
+}
+.about-text{
+  margin-top: 30px; 
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.about-row{
+  padding: 30px 0px;
+  line-height: 1.5;
 }
 .about-title {
   font-size: 1.6em;
@@ -418,36 +450,37 @@ body:not(i){
   }
 
   .btn-register {
-      color: rgb(255, 255, 255);
-      min-width: 70px;
-      width: auto;
-      font-weight: 600;
-      font-family: 'Montserrat', sans-serif;
-      cursor: pointer;
-      font-size: 16px;
-      opacity: 1;
-      text-align: center;
-      display: inline-flex;
-      -webkit-box-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      background: rgb(219, 74, 52) !important;
-      border-width: 2px;
-      border-style: solid;
-      border-color: rgb(255, 255, 255);
-      border-image: initial;
-      border-radius: 3px;
-      outline: none;
-      padding: 16px 32px;
-      box-shadow: 2px 2px #888;
+    color: rgb(255, 255, 255);
+    min-width: 70px;
+    width: auto;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: uppercase;
+    opacity: 1;
+    line-height: 1;
+    text-align: center;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgb(236, 47, 18) !important;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    border-radius: 3px;
+    outline: none;
+    padding: 16px 32px;
+    box-shadow: 3px 3px #888;
   }
-
   .btn-register:hover {
     font-weight: 700 !important;
     color: white;
     letter-spacing: 3px;
-    background: rgb(241, 36, 4) !important;
-    transition: all 0.3s ease 0s;
+    background: rgb(231, 39, 9) !important;
+    transition: all ease 0.3s;
   }
 
   #register-section {
