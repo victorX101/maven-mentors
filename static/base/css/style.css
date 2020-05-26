@@ -18,8 +18,11 @@
 }
 body:not(i){
   font-family: 'Nunito Sans', sans-serif !important;
-  background-color: #888;
+  background: repeating-linear-gradient(45deg , #fff 0% 20%, rgb(231, 231, 231) 20% 40%,#fff 40%);
   -webkit-font-smoothing: antialiased;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #nav-bar {
   position: sticky;
@@ -77,8 +80,7 @@ body:not(i){
 
 .promo-title {
   font-size: 2.3rem;
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.4;
   padding-top: 50px;
   padding: 0 15px;
@@ -207,7 +209,13 @@ body:not(i){
   border-color: black;
 }
 
+
+
 /* -----------   About -------------*/
+
+
+
+
 .btn-primary {
   box-shadow: none;
   padding: 8px 25px;
@@ -220,23 +228,24 @@ body:not(i){
   transform: scale(1.2);
 }
 #about {
+  /* background-color: #fff; */
   background-color: #fff;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-bottom: 3.5rem;
+  padding-top: 3.5rem;
 }
 .about-text{
-  margin-top: 30px; 
+  padding-top: 30px; 
   margin-bottom: 60px;
   text-align: center;
   font-size: 1.2rem;
 }
 .about-row{
-  padding: 30px 0px;
+  padding: 0px 20px;
   line-height: 1.5;
 }
 .about-title {
-  font-size: 1.6em;
-  margin-top: 8%;
+  font-size: 2rem;
+  padding-top: 8%;
   font-weight: 600;
 }
 #about ul li {
@@ -245,7 +254,55 @@ body:not(i){
 #about ul {
   margin-left: 20px;
 }
+@media only screen and (max-width : 762px)
+{
+  .about-text{
+    font-size: 1rem;
+  }
+  .about-title{
+    font-size: 1.8rem;
+  }
+}
+
+/*  Why THis After JEE Section (why-ths) */
+
+#why-this{
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+
+}
+
+
+.why-this-title{
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+
+.why-this-text{
+  font-size: 1.2rem;
+  padding-top: 2rem;
+}
+
+
+@media only screen and (max-width:768px)
+{
+  .why-this-title{
+    font-size: 1.8rem;
+    justify-content: center;
+  }
+  .why-this-text{
+    font-size: 1rem;
+    padding-top: 1.5rem;
+  }
+  #why-this{
+    padding-top: 2rem;
+  }
+}
+
 /* ------- Testimonials Section -----*/
+
+
 #testimonials {
   margin: 100px 0;
 }
