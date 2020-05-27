@@ -268,8 +268,8 @@ body:not(i){
 /*  Why THis After JEE Section (why-ths) */
 
 #why-this{
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
 }
 
@@ -303,6 +303,7 @@ body:not(i){
   background-color: #fff;
   border: 2px solid #0686E4;
   color: #0686E4;
+  transition: all 0.3s;
 }
 
 /* Sweep to right hover effect  */
@@ -360,6 +361,7 @@ body:not(i){
 
 #main-part{
   padding-top: 2rem;
+  padding-bottom: 6rem;
 }
 .firsta{
   padding-top: 1.5rem;
@@ -405,6 +407,106 @@ body:not(i){
     padding-top: 0;
   }
 }
+/* Join Us section */
+#join-us{
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+.parts-title{
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.parts-button{
+  padding:12px 10px;
+  color: #fff;
+  font-weight: 700;
+  border: 3px solid #8A57DB;
+  border-radius: 5px;
+  background-color: #1c0c35;
+  letter-spacing: 1px;
+}
+#join-us .hvr-sweep-to-right:before{
+  background-color: #8A57DB;
+}
+#join-us .hvr-sweep-to-right:hover{
+  letter-spacing: 2px;
+}
+
+#join-us .title::after{
+  background: #fff !important;
+} 
+
+
+
+
+
+/* Pricing Section */
+
+
+#pricing{
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.pricing-title{
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-bottom: 120px;
+}
+.pricing-lower{
+  font-size: 1.2rem;
+  color: rgb(95, 95, 95);
+  padding: 0.5rem 0rem;
+}
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .card:hover , .pricing .active{
+  margin-top: -.25rem;
+  margin-bottom: .25rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+.pricing .card:hover .btn {
+  opacity: 1;
+}
+
+/* Hover Effects on Card */
+
+@media only screen and (min-width: 768px) {
+
+  
+}
 /* ------- Testimonials Section -----*/
 
 
@@ -428,6 +530,9 @@ body:not(i){
 .feedback {
   font-style: italic;
 }
+
+
+
 /* ----- Footer ------*/
 
 
@@ -474,6 +579,9 @@ body:not(i){
   transform: scale(1.2);
   color: #fff;
 }
+
+
+
 /*-------- Social Media icons ---------- */
 #social p {
   font-weight: 600;

@@ -39,7 +39,7 @@
 
 
 
-  <!--- Next Section ------>
+  <!--- About Section ------>
 
   <section id="about">
       <div class="container about-row">
@@ -90,7 +90,7 @@
 
     <section id="main-part" style="background-color: #fff;">
     <div class="container">
-      <h3 class="title text-center programme-title" style="padding-top: 5rem; padding-bottom: font-size: 2.1rem;">WHAT'S IN OUR PROGRAMME ?</h3>
+      <h3 class="title text-center programme-title" style="padding-top: 5rem; padding-bottom: 5rem font-size: 2.1rem;">WHAT'S IN OUR PROGRAMME ?</h3>
       
       
       
@@ -137,8 +137,8 @@
       </div>
 
       <div class="row firsta pl-5 pr-5">
-        <div class="col-md-4 order-md-2">
-          <img src="/static/base/images/81688.png" class = "img-fluid pl-0" style="height: 350px; width: 200px;" alt="What after JEE ?">
+        <div class="col-md-4 order-md-2 text-center">
+          <img src="/static/base/images/81688.png" class = "img-fluid pl-0 align-self-center" style="height: 350px; width: 200px;" alt="What after JEE ?">
         </div>
         <div class="col-md-8 order-md-1">
           <h3 class="firsta-title-app firsta-title">Our Exclusive App &amp; Rating System</h3>
@@ -151,6 +151,95 @@
 
 
     </div>
+    </section>
+
+
+<!--  JOIN US SECTION   -->
+
+
+
+    <section id="join-us" style="background-color: #1C0C35;">
+      <div class="container">
+        <h3 class="title text-center parts-title">JOIN US TODAY !</h3>
+        <div class="row justify-content-md-around">
+          <div class="col-md-4 text-center py-3 py-md-2 order-md-2">
+            <a href="{% url 'profiles:menteereg' %}" class="hvr-sweep-to-right parts-button" style="font-size: 1.1rem;">REGISTER NOW</a>
+          </div>
+          <div class="col-md-4 text-center py-3 py-md-2 order-md-1">
+            <a href="{% url 'profiles:mentorreg' %}" class="hvr-sweep-to-right parts-button">BE A MENTOR</a>
+          </div>
+          <div class="col-md-4 text-center py-3 py-md-2 order-md-3">
+            <a href="{% url 'profiles:careg' %}" class="hvr-sweep-to-right parts-button">BE AN AMBASSADOR</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--  PRICING SECTION    -->
+
+
+
+
+    <section id="pricing" style="background-color: white;">
+      <h3 class="title text-center pricing-title">CHOOSE YOUR PLAN !</h3>
+      <div class="container pricing">
+          <div class="row">
+            <!-- Free Tier -->
+            <div class="col-lg-4">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
+                  <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    
+                    <li>Unlimited Private Projects</li>
+                    <li>Dedicated Phone Support</li>
+                    <li>Free Subdomain</li>
+                    <li>Monthly Status Reports</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Plus Tier -->
+            <div class="col-lg-4">
+              <div class="card active mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+                  <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
+                  <hr>
+                  <ul class="fa-ul">
+              
+                    <li>Unlimited Private Projects</li>
+                    <li>Dedicated Phone Support</li>
+                    <li>Free Subdomain</li>
+                    <li>Monthly Status Reports</li>
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+            <!-- Pro Tier -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+                  <h6 class="card-price text-center">$49<span class="period">/month</span></h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    
+                    <li>Unlimited Private Projects</li>
+                    <li>Dedicated Phone Support</li>
+                    <li><strong>Unlimited</strong> Free Subdomains</li>
+                    <li>Monthly Status Reports</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
   
   {% include "profiles/parts/footerHome.html" %}
