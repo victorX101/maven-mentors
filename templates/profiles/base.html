@@ -43,13 +43,13 @@
 
   <section id="about">
       <div class="container about-row">
-      <h3 class="title text-center ">ABOUT US</h3>
+      <h3 class="title text-center about-title ">ABOUT US</h3>
       <div class="row  justify-content-center">
         <div class="col-12">
           <p class = "about-text">
             <b>Maven Mentors</b> is a young and aspiring startup initiated by students of IIT Ropar. It aims at providing JEE Aspirants Mentors from Top Tier Colleges in India so as to guide them in exploring different fields, learn new skills and selecting their branch in college.
             We think that once you are done with JEE it's your time to get out of PCM Centralized studies and explore the world around you. But sometimes it becomes difficult to start and explore things out. As we were in the same situation 2 years ago we created a special <b>Mentorship Programme</b>
-            to help you learn skills like programming, finance etc. and fill your JOSAA preferences.
+            to help you learn skills like programming,finance etc. and fill your JOSAA preferences.
           </p>
         </div>
       </div>
@@ -67,15 +67,13 @@
         <div class="col-md-4 order-md-2 justify-content-center">
           <img src="/static/base/images/why this.png" alt="What after JEE ?" class="img-fluid pb-5 pb-md-0" style="padding: 0 20px">
         </div>
-        <div class="col-md-8 justify-content-start order-md-1">
+        <div class="col-md-8 order-md-1">
           <h3 class="why-this-title">WHY THIS AFTER JEE ?</h3> 
           <p class="why-this-text" style="text-align: left;">
             The next <b>Big Question</b> After JEE Exams in every mind is the selection of a branch. As they were busy with JEE Preparation they are now not able to decide their major
-             and end up taking random courses without proper knowledge and interest. We think that Our mentors can help
-             them a lot in this phase as they have experienced this phase and now being in a college they know about different branches and have friends in most.
-             Plus they can guide you in learning skills like programming ,finance in the best possible way.             
+             and end up taking random courses without proper knowledge and interest. Continue Reading to find how we will help you out in this phase.             
           </p>
-
+          <a href="{% url 'profiles:menteereg' %}" class="hvr-sweep-to-right">REGISTER NOW</a>
         </div>
 
       </div>
@@ -90,70 +88,90 @@
   <!-- Next Section  -->
 
 
-    <section class="main-part" style="background: #fff;">
-    <div class="container about-row" style="background-color: #fff;"></div>
-    <div class="row">
-      <div class="col-md-6"></div>
-    </div>
-          <h3 class="about-title" style="margin: 15px 0px; margin-top: 500px;">What do we do at MAVEN MENTORS?</h3>
-          <ul>
-            <li>We connect you to best mentors based on your interests after JEE.</li>
-            <li>Mentors will be students of top tier colleges in India selected after a rigorous interview procedure.
-            </li>
-            <li>These Mentors will guide you in learning new skills like programming, finance etc. and exploring
-              different fields before selecting your major in college.</li>
-            <li>They will help you fill your JOSAA preferences in the most efficient way to select best possible branch and college based on your interests and JEE Rank.</li>
-            <li>If you are inclined towards a particular skill then we will connect you to a mentor who is already
-              performing well in it.</li>
-            <li>You can chat with your mentor or request a call back ( they will have to reply within 18 hours ).</li>
-            <li>All those conversations will be on our exclusive app so as to ensure the quality of mentorship.</li>
-            <li>After each week a portal will be floated on the app to give ratings to your mentor. We will keep a close look at these ratings. </li>
-            <li>You can reach us anytime if you face any specific issue with your mentor.</li>
-          </ul>
-          <div class="about-title" style="margin-top: 75px;">Registration Procedure</div>
-          <ul>
-            <li>Click on the REGISTER NOW button, fill your basic info and any special requirements in your mentor.</li>
-            <li>We will contact you within 24 Hours of your registration and discuss when to start your mentorship.</li>
-            <li>It will be a 4-week program and its fees will be <strong>Rs 1100/-.</strong>
-            </li>
-          </ul>
+    <section id="main-part" style="background-color: #fff;">
+    <div class="container">
+      <h3 class="title text-center programme-title" style="padding-top: 5rem; padding-bottom: font-size: 2.1rem;">WHAT'S IN OUR PROGRAMME ?</h3>
+      
+      
+      
+      <div class="row firsta pl-5 pr-5">
+        <div class="col-md-4">
+          <img src="/static/assets/visit-arc.svg" class = "img-fluid pl-0" alt="What after JEE ?">
         </div>
+        <div class="col-md-8">
+          <h3 class="firsta-title pt-md-5">One to One Personal Mentorship</h3>
+          <p class="firsta-text"> All Education systems depend on comparison but at Maven Mentors we believe that every individual is unique and have separate interests which may
+            or may not match with others. Thus we provide you a personal Mentor who will take care of your Uniqueness.
+          </p>
+        </div>
+      </div>
 
+
+      
+      <div class="row firsta pl-5 pr-5">
+        <div class="col-md-4 order-md-2">
+          <img src="/static/base/images/josaa.jpg" class = "img-fluid pl-0" alt="What after JEE ?">
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h3 class="firsta-title second-pa">JOSAA &amp; Branch Selection</h3>
+          <p class="firsta-text"> Our Mentors will give you a breif idea of every branch and help you find what interests you the most. They will sort 
+            all your queries so that you can fill your JOSAA preferences in most efficient way.
+          </p>
+        </div>
       </div>
-      <div class="col-md-5">
-        <img src="/static/assets/visit-arc.svg" class="bottom-img" alt="" id="register">
-        <a href="{% url 'profiles:menteereg' %}" class="btn-register"
-        style="background-color: transparent; font-size: 10 px; height:50px ;width: 120px; margin-top: 20px; margin-bottom: 75px;">REGISTER</a>
-        
+      
+      
+      
+      
+      <div class="row firsta pl-5 pr-5">
+        <div class="col-md-4 order-md-1">
+          <img src="/static/base/images/program.jpg" class = "img-fluid pl-0" alt="What after JEE ?">
+        </div>
+        <div class="col-md-8 order-md-2">
+          <h3 class="firsta-title pt-md-5">Learn Programming &amp; Finance</h3>
+          <p class="firsta-text">
+            If you take our Premiere Plan your mentor will also have the responsibility to introduce you to computing ,help you learn basics of programming 
+            and finance.</br>In Our survey 80% of the College students think that knowing basics of these help you a lot in starting your next journey.
+          </p>
+        </div>
       </div>
 
-      <div class="col-md-5">
-        
-        <div class="about-title" style="margin-top: 15px; font-size: 1.3rem;">Do you have good public speaking and business skills?</div>
-        <ul>
-          <li>Then you can earn money by conducting our seminars in coachings, schools and
-            We will pay you on the basis of the number of mentees who registered for our services from the places you
-            visited.</li>
-          </li>
-        </ul>
-        <a href="{% url 'profiles:careg' %}" class="btn-register"
-        style="background-color: transparent; font-size: 10 px; height:50px ;width: 20%;">APPLY</a>
+      <div class="row firsta pl-5 pr-5">
+        <div class="col-md-4 order-md-2">
+          <img src="/static/base/images/81688.png" class = "img-fluid pl-0" style="height: 350px; width: 200px;" alt="What after JEE ?">
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h3 class="firsta-title-app firsta-title">Our Exclusive App &amp; Rating System</h3>
+          <p class="firsta-text">
+            We believe that Quality is very important in mentorship thus we have our own App for your conversations through which we can monitor and ensure that the mentor 
+            is working his/her best.Every Week a <b>Rating Portal</b> will be floated in which you have to rate your mentor out of 5 We will keep a close look at these Ratings.
+          </p>
+        </div>
       </div>
+
+
     </div>
-    </div>
-  </section>
-
-
+    </section>
+  
   {% include "profiles/parts/footerHome.html" %}
-
   <!--- Smooth Scroll js ---------->
   <!-- <script type="text/javascript" src="/static/base/js/smooth-scroll.js"></script> -->
   <!-- <script> -->
     <!-- var scroll = new SmoothScroll('a[href*="#"]'); -->
   <!-- </script> -->
+
+
+  <!-- Attributes to freepik and other sites for vectors  -->
+
+
   <!-- <a href="https://www.freepik.com/free-photos-vectors/people">People vector created by pch.vector - www.freepik.com</a> -->
   <!-- http://preview.themeforest.net/item/edugate-multiconcept-education-wordpress-theme/full_screen_preview/14380965 -->
   <!-- <a href="https://www.freepik.com/free-photos-vectors/people">People vector created by pch.vector - www.freepik.com</a> -->
+  <!-- <a href="https://www.freepik.com/free-photos-vectors/illustration">Illustration vector created by stories - www.freepik.com</a> -->
+  <!-- <a href="https://www.freepik.com/free-photos-vectors/technology">Technology vector created by freepik - www.freepik.com</a> -->
+  <!-- <a href="https://www.freepik.com/free-photos-vectors/mockup">Mockup psd created by rawpixel.com - www.freepik.com</a> -->
+
+
 </body>
 
 </html>
