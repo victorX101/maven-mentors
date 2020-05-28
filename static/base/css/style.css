@@ -456,20 +456,26 @@ body:not(i){
   font-size: 2.5rem;
   padding-bottom: 120px;
 }
-.pricing-lower{
-  font-size: 1.2rem;
-  color: rgb(95, 95, 95);
-  padding: 0.5rem 0rem;
-}
 .pricing .card {
   border: none;
   border-radius: 1rem;
   transition: all 0.2s;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1.2rem 0 rgba(0, 0, 0, 0.308);
+  text-align: left;
 }
-
+.pricing ul{
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .pricing hr {
   margin: 1.5rem 0;
+  background-color: #d1d1d1;
+}
+.fa-check{
+  color: rgba(0, 0, 0, 0.596);
+  padding-right: 4px;
 }
 
 .pricing .card-title {
@@ -491,11 +497,14 @@ body:not(i){
 .pricing ul li {
   margin-bottom: 1rem;
 }
+.pricing .active{
+  box-shadow: 0 0.5rem 1.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
 
-.pricing .card:hover , .pricing .active{
-  margin-top: -.25rem;
-  margin-bottom: .25rem;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+.pricing .card:hover {
+  margin-top: -.4rem;
+  margin-bottom: .4rem;
+  box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 .pricing .card:hover .btn {
   opacity: 1;
@@ -507,10 +516,13 @@ body:not(i){
 
   
 }
+
+/*                OUR TEAM SECTION                  */
+
 /* ------- Testimonials Section -----*/
 
 
-#testimonials {
+/* #testimonials {
   margin: 100px 0;
 }
 .testimonials {
@@ -529,7 +541,7 @@ body:not(i){
 }
 .feedback {
   font-style: italic;
-}
+} */
 
 
 

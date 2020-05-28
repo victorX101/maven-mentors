@@ -85,7 +85,7 @@
 
 
 
-  <!-- Next Section  -->
+  <!-- Main-part Section  -->
 
 
     <section id="main-part" style="background-color: #fff;">
@@ -186,54 +186,65 @@
       <h3 class="title text-center pricing-title">CHOOSE YOUR PLAN !</h3>
       <div class="container pricing">
           <div class="row">
-            <!-- Free Tier -->
-            <div class="col-lg-4">
-              <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                  <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
-                  <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
-                  <hr>
-                  <ul class="fa-ul">
-                    
-                    <li>Unlimited Private Projects</li>
-                    <li>Dedicated Phone Support</li>
-                    <li>Free Subdomain</li>
-                    <li>Monthly Status Reports</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- Plus Tier -->
-            <div class="col-lg-4">
+
+             <!-- Plus Tier -->
+
+            <div class="col-md-4 order-md-2">
               <div class="card active mb-5 mb-lg-0">
                 <div class="card-body">
-                  <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
-                  <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
+                  <h5 class="card-title text-muted text-uppercase text-center">Most Popular</h5>
+                  <h6 class="card-price text-center"><i class="fa fa-inr"></i>1500<span class="period">/month</span></h6>
                   <hr>
-                  <ul class="fa-ul">
+                  <ul class="text-center">
               
-                    <li>Unlimited Private Projects</li>
-                    <li>Dedicated Phone Support</li>
-                    <li>Free Subdomain</li>
-                    <li>Monthly Status Reports</li>
+                    <li>Personal IITian/NITian Mentor</li>
+                    <li>JOSAA &amp; Seat Allocation</li>
+                    <li>Branch Selection</li>
+                    <li>Introduction to Computing</li>
+                    <li>Basics of Programming</li>
+                    <li>Basics of Finance</li>
+                    <li>Weekly Rating of Mentor</li>
+                    <li><a href="{% url 'profiles:menteereg' %}" class="hvr-sweep-to-right ">GET 3 DAYS TRIAL</a></li>
                   </ul>
-                 
                 </div>
               </div>
             </div>
-            <!-- Pro Tier -->
-            <div class="col-lg-4">
-              <div class="card">
+            <!-- Free Tier -->
+            <div class="col-md-4 order-md-1">
+              <div class="card mb-5 mb-md-0">
                 <div class="card-body">
-                  <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
-                  <h6 class="card-price text-center">$49<span class="period">/month</span></h6>
+                  <!-- <h5 class="card-title text-muted text-uppercase text-center">Free</h5> -->
+                  <h6 class="card-price text-center"><i class="fa fa-inr"></i>1000<span class="period">/Complete</span></h6>
                   <hr>
                   <ul class="fa-ul">
-                    
-                    <li>Unlimited Private Projects</li>
-                    <li>Dedicated Phone Support</li>
-                    <li><strong>Unlimited</strong> Free Subdomains</li>
-                    <li>Monthly Status Reports</li>
+                    <li>Personal IITian/NITian Mentor</li>
+                    <li>JOSAA &amp; Seat Allocation</li>
+                    <li>Branch Selection Help</li>
+                    <li>Weekly Rating of Mentor</li>
+                    <li>
+                    <a href="{% url 'profiles:menteereg' %}" class="hvr-sweep-to-right">GET 3 DAYS TRIAL</a>
+                  </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+           
+            
+            <!-- Pro Tier -->
+            <div class="col-md-4 order-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <!-- <h5 class="card-title text-muted text-uppercase text-center">Pro</h5> -->
+                  <h6 class="card-price text-center"><i class="fa fa-inr"></i>2200<span class="period">/month</span></h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><strong>Expert Level Mentor</strong></li>
+                    <li>For those who have decided everything and want certain skills in their Mentor</li>
+                    <li>Totally Personalized Programme</li>
+                    <li>Access to Multiple Mentors</li>
+                    <li>
+                      <a href="{% url 'profiles:menteereg' %}" class="hvr-sweep-to-right">TALK TO US</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -242,6 +253,18 @@
         </div>
     </section>
   
+
+
+
+    <!-------------------------------OUR TEAM SECTION-------------------------->
+
+
+    <section>
+
+    </section>
+
+
+
   {% include "profiles/parts/footerHome.html" %}
   <!--- Smooth Scroll js ---------->
   <!-- <script type="text/javascript" src="/static/base/js/smooth-scroll.js"></script> -->
