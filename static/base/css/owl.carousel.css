@@ -1,0 +1,106 @@
+
+.owl-carousel {
+  display: none;
+  width: 100%;
+  margin: 0px 20px;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+    /* fix firefox animation glitch */ }
+
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+
+
+
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  .owl-carousel .owl-wrapper,
+  .owl-carousel .owl-item {
+    position: relative;
+    float: left;
+    justify-content: center;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 60%;
+    text-align: center; }
+  
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden; }
+  .owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab; }
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+  .owl-carousel.owl-rtl .owl-item {
+    float: right; }
+
+/* No Js */
+
+.no-js .owl-carousel {
+  display: block; }
+
+
+.owl-height {
+  transition: height 500ms ease-in-out; }
+
+.owl-nav{
+  display: none;
+}
+.owl-dots{
+  text-align: center;
+  margin-right: 30px;
+}
+.owl-dot{
+  height: 15px;
+  width: 15px;
+  border: none;
+  background-color: rgb(151, 151, 151);
+  display: inline-block;
+  border-radius: 50%;
+  margin: 50px 5px 0px;
+  opacity: 0.8;
+}
+.owl-dot.active{
+  background-color: #0686E4;
+}
+
+@media only screen and (min-width:768px)
+{
+  .owl-dots{
+    display: none;
+  }
+}
