@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 *:not(i){
   margin: 0;
   padding: 0;
@@ -545,13 +547,23 @@ body{
   border-radius: 0;
   margin: 20px 0;
 }
+/* ------------ CONTACT US SECTION FOOTER ------------ */
+
 .contact-us{
   padding-top: 30px;
+  padding-left: 40px !important;
 }
 .contact-us p{
   padding: 5px 0px ;
 }
-
+.socialcon , .socialcona{
+  color: white !important;
+  font-size: 1.5rem !important;
+  transition: all 0.2s;
+}
+.socialcon:hover , .socialcona:hover{
+  color: #1D37B9 !important;
+}
 .call{
   padding-left: 10px;
   color: #fff;
@@ -566,33 +578,30 @@ body{
 }
 
 .quick-link{
-  padding: 30px 20px 20px 50px !important;
+  padding: 30px 20px 20px 30px !important;
 }
-/*-------- Social Media icons ---------- */
-#social p {
+.quick-title{
+  margin-bottom: 33px !important;
+  font-size: 1rem !important;
+}
+.quick-link p, .quick-link a{
+  padding: 5px 0px !important;
+  margin-bottom: 0.8rem;
   font-weight: 600;
-  font-size: 16px;
-  margin-top: 20px;
+  font-size: 0.8rem ;
+  color: white !important;
+ 
 }
-#social .social-icons .svg-icons img {
-  width: 23px;
-  transition: transform 0.7s;
-  margin-right: 1rem;
-}
-#social .social-icons .svg-icons img:hover {
-  transform: scale(1.2);
-}
-.copyright {
-  padding-top: 2%;
-  font-size: 15px;
-}
-.copyright a {
+.quick-link a:hover{
+  color: #1D37B9 !important;
   text-decoration: none;
-  color: #fff;
 }
-.copyright a:hover {
-  text-decoration: none;
-  color: #1723b1;
+.quick-link i{
+  padding: 1px !important;
+  width: 20px !important;
+  margin: 0 !important;
+  font-size: 0.8rem !important;
+  height: 12px !important;
 }
 
 .event {
@@ -656,25 +665,14 @@ body{
   .heading-register {
     padding-top: 60px !important;
   }
-
   #register-section .container .row .btn-register {
     margin-bottom: 15px;
   }
-
   .heading-register {
     color: white;
     padding: 30px;
     font-weight: bold;
     font-size: 35px;
-  }
-  .btn-guidelines{
-    color: white;
-    /* border: 1px ; */
-  }
-
-  .btn-guidelines:hover{
-    color: yellow;
-    box-shadow: yellow;
   }
   .wrapper-btns{
     margin: 10px 0;
