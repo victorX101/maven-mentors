@@ -139,14 +139,7 @@ body{
   transform: translateY(23px);
   margin-bottom: 20px;
 }
-
-
-
 /* -----------   About -------------*/
-
-
-
-
 .btn-primary {
   box-shadow: none;
   padding: 8px 25px;
@@ -194,28 +187,21 @@ body{
     font-size: 1.8rem;
   }
 }
-
 /*  Why THis After JEE Section (why-ths) */
-
 #why-this{
   padding-top: 2rem;
   padding-bottom: 2rem;
 
 }
-
-
 .why-this-title{
   font-weight: 700;
   font-size: 2rem;
 }
-
-
 .why-this-text{
   font-size: 1.2rem;
   padding-top: 1.8rem;
   line-height: 1.4;
 }
-
 .hvr-sweep-to-right {
   display: inline-block;
   vertical-align: middle;
@@ -317,9 +303,6 @@ body{
 .firsta-title-app{
   padding-top: 100px;
 }
-
-
-
 @media only screen and (max-width:768px)
 {
   .firsta-title{
@@ -368,12 +351,7 @@ body{
 #join-us .title::after{
   background: #fff !important;
 } 
-
-
-
-
-
-/* Pricing Section */
+/* --------------------------- Pricing Section ------------------- */
 
 
 #pricing{
@@ -654,14 +632,12 @@ body{
     background: rgb(231, 39, 9) !important;
     transition: all ease 0.3s;
   }
-
   #register-section {
     background-color: #1c0c35;
     height: 45vh;
     scroll-padding-top: 300px;
     text-align: center;
   }
-
   .heading-register {
     padding-top: 60px !important;
   }
@@ -686,4 +662,34 @@ body{
     .promo-title{
       font-size: 2.3rem;
     }
+  }
+
+  /* ---------------- TERMS OF SERVICE -------------------------- */
+  .tos{
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  #common{
+    padding: 4rem 0rem;
+  }
+  .lastmod{
+    color: rgb(39, 39, 39);
+    font-size: 0.9rem ;
+    padding: 0.5rem 0rem;
+  }
+  .termspara{
+    padding: 2rem 0rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  .termpoints{
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+  .termpoints li{
+    padding: 10px 0px;
+  }
+  #mentee{
+    padding-top: 6rem;
+    padding-bottom: 0rem;
   }

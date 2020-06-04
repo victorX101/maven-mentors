@@ -27,8 +27,8 @@ def mentorreg(request):
         form = forms.MentorForm()
         return render(request,'profiles/mentor/registration.html',context={'form':form})
 
-def mentorguide(request):
-    return render(request,'profiles/mentor/guidelines.html')
+def terms(request):
+    return render(request,'profiles/terms.html')
 
 def carreg(request):
     if(request.method == 'POST'):
