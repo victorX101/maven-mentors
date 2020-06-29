@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from profiles import forms
 
 
@@ -18,24 +18,26 @@ def menteereg(request):
         return render(request,'profiles/mentee/registration.html',context={'form':form})
 
 def mentorreg(request):
-    if(request.method == 'POST'):
-        form = forms.MentorForm(request.POST)
-        if(form.is_valid()):
-            form.save()
-            return render(request,'profiles/message.html')
-    else:
-        form = forms.MentorForm()
-        return render(request,'profiles/mentor/registration.html',context={'form':form})
+    return redirect('https://forms.gle/zxJd9HZdtqXUrFEr5')
+    # if(request.method == 'POST'):
+    #     form = forms.MentorForm(request.POST)
+    #     if(form.is_valid()):
+    #         form.save()
+    #         return render(request,'profiles/message.html')
+    # else:
+    #     form = forms.MentorForm()
+    #     return render(request,'profiles/mentor/registration.html',context={'form':form})
 
 def terms(request):
     return render(request,'profiles/terms.html')
 
 def carreg(request):
-    if(request.method == 'POST'):
-        form = forms.AmbassadorForm(request.POST)
-        if(form.is_valid()):
-            form.save()
-            return render(request,'profiles/message.html')
-    else:
-        form = forms.AmbassadorForm()
-        return render(request,'profiles/ambassador/registration.html',context={'form':form})    
+    return redirect('https://forms.gle/iHz63nJvF7yCtMgk6')
+    # if(request.method == 'POST'):
+    #     form = forms.AmbassadorForm(request.POST)
+    #     if(form.is_valid()):
+    #         form.save()
+    #         return render(request,'profiles/message.html')
+    # else:
+    #     form = forms.AmbassadorForm()
+    #     return render(request,'profiles/ambassador/registration.html',context={'form':form})    

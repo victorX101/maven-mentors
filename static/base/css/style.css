@@ -119,14 +119,7 @@ body{
 .bottom-img {
   width: 100%;
 }
-
-
-
 /* ---------- Services --------- */
-
-
-
-
 .title::after {
   content: "";
   background: linear-gradient(to right, #1723b1, #58f0ff);
@@ -221,7 +214,6 @@ body{
   color: #0686E4;
   transition: all 0.3s;
 }
-
 /* Sweep to right hover effect  */
 .hvr-sweep-to-right:before {
   content: "";
@@ -252,9 +244,6 @@ body{
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
-
-
 @media only screen and (max-width:768px)
 {
   .why-this-title{
@@ -272,9 +261,7 @@ body{
     align-self: center;
 }
 }
-
 /* Main Part Section */
-
 #main-part{
   padding-top: 2rem;
   padding-bottom: 6rem;
@@ -298,8 +285,6 @@ body{
   font-size: 2.1rem;
   font-weight: 700;
 }
-
-
 .firsta-title-app{
   padding-top: 100px;
 }
@@ -347,18 +332,14 @@ body{
 #join-us .hvr-sweep-to-right:hover{
   letter-spacing: 2px;
 }
-
 #join-us .title::after{
   background: #fff !important;
 } 
 /* --------------------------- Pricing Section ------------------- */
-
-
 #pricing{
   padding-top: 5rem;
   padding-bottom: 10rem;
 }
-
 .pricing-title{
   font-weight: 700;
   font-size: 2.5rem;
@@ -385,30 +366,25 @@ body{
   color: rgba(0, 0, 0, 0.596);
   padding-right: 4px;
 }
-
 .pricing .card-title {
   margin: 0.5rem 0;
   font-size: 0.9rem;
   letter-spacing: .1rem;
   font-weight: bold;
 }
-
 .pricing .card-price {
   font-size: 3rem;
   margin: 0;
 }
-
 .pricing .card-price .period {
   font-size: 0.8rem;
 }
-
 .pricing ul li {
   margin-bottom: 1rem;
 }
 .pricing .active{
   box-shadow: 0 0.5rem 1.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
-
 .pricing .card:hover {
   margin-top: -.4rem;
   margin-bottom: .4rem;
@@ -417,16 +393,7 @@ body{
 .pricing .card:hover .btn {
   opacity: 1;
 }
-
-/* Hover Effects on Card */
-
-@media only screen and (min-width: 768px) {
-
-  
-}
-
 /*                OUR TEAM SECTION                  */
-
 #our-team{
   padding: 3rem 0;
 }
@@ -448,8 +415,7 @@ body{
   font-weight: 500;
   font-size: 0.8rem;
   color: rgb(71, 71, 71);
-  
-}
+  }
 .team-image{
   width: 60%;
   height: 193px;
@@ -490,10 +456,7 @@ body{
     padding-top: 5rem;
   }
 }
-
 /* ----- Footer ------*/
-
-
 #footer {
   background: linear-gradient(to right, #1723b1, #58d0ff) !important;
   color: #fff !important;
@@ -503,7 +466,6 @@ body{
 }
 .footer-box {
   padding: 20px;
-  
 }
 .footer-box img {
   width: 7rem;
@@ -526,7 +488,6 @@ body{
   margin: 20px 0;
 }
 /* ------------ CONTACT US SECTION FOOTER ------------ */
-
 .contact-us{
   padding-top: 30px;
   padding-left: 40px !important;
@@ -581,19 +542,14 @@ body{
   font-size: 0.8rem !important;
   height: 12px !important;
 }
-
 .event {
   position: relative;
 }
-
-
 .download-btn {
   margin-top: 60px;
   text-align: center;
 }
-
-
-  .link-play-buttons button {
+.link-play-buttons button {
     padding: 15px;
     margin: 10px;
     font-size: 20px;
@@ -663,7 +619,6 @@ body{
       font-size: 2.3rem;
     }
   }
-
   /* ---------------- TERMS OF SERVICE -------------------------- */
   .tos{
     font-weight: 700;

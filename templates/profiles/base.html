@@ -242,7 +242,7 @@
                     <li>Totally Personalized Programme</li>
                     <li>Access to Multiple Mentors</li>
                     <li>
-                      <a href="{% url 'profiles:menteereg' %}" class="hvr-sweep-to-right">TALK TO US</a>
+                      <a href="https://wa.me/919306020545?text=Hi%2C%20I%20wanted%20a%20custom%20mentorship%20plan%20from%20Maven%20Mentors" target="_blank" class="hvr-sweep-to-right">TALK TO US</a>
                     </li>
                   </ul>
                 </div>
@@ -317,11 +317,29 @@
 
 
   {% include "profiles/parts/footerHome.html" %}
-
+  <script src="/static/base/js/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      margin:20,
+      nav:true,
+      autoplay:true,
+      responsive:{
+          0:{
+              loop:true,
+              items:1
+          },
+          600:{
+            loop:false,
+            items:3
+          },
+          1000:{
+            items:3
+          }
+      }
+  })
+  </script>
 
   <!-- Attributes to freepik and other sites for vectors  -->
-
-
   <!-- <a href="https://www.freepik.com/free-photos-vectors/people">People vector created by pch.vector - www.freepik.com</a> -->
   <!-- http://preview.themeforest.net/item/edugate-multiconcept-education-wordpress-theme/full_screen_preview/14380965 -->
   <!-- <a href="https://www.freepik.com/free-photos-vectors/people">People vector created by pch.vector - www.freepik.com</a> -->
