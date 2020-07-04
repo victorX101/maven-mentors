@@ -24,7 +24,6 @@ SECRET_KEY = 'zu1n19r+u7ms57#e0#*l#3j@h&9*^^5%vc8@tvh^+%886n-#oc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = ['*']
 
 # When Empty allowed hosts is configured to 127.0.0.1 localhost and [::1] * allows it for all the urls requested and we are responsible for any web url poisoning attacks.
@@ -133,3 +132,12 @@ if DEBUG:
 else:
 
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# The SMTP backend is the default configuration inherited by Django. 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'mysterymailservice@gmail.com'
+EMAIL_HOST_PASSWORD = 'Hinikki9466@$'
+# TLS is transport layer secuirity more secure than ssl
+EMAIL_USE_TLS = True
+#secure socket layer

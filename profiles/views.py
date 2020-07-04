@@ -1,5 +1,7 @@
 from django.shortcuts import render,redirect
 from profiles import forms
+from django.core.mail import send_mail
+from django.conf import settings
 
 
 # Create your views here.
@@ -12,7 +14,10 @@ def menteereg(request):
         form = forms.MenteeForm(request.POST)
         if(form.is_valid()):
             form.save()
+            send_mail('New Mentee Registration by '+form.cleaned_data['your_name'],'--',settings.EMAIL_HOST_USER,['teammavenmentors@gmail.com'],fail_silently=True)
             return render(request,'profiles/message.html')
+        else:
+            return render(request,'profiles/mentee/registration.html',context={'form':form})
     else:
         form = forms.MenteeForm()
         return render(request,'profiles/mentee/registration.html',context={'form':form})

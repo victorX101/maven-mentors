@@ -1,7 +1,10 @@
-from django.contrib.auth.forms import UserCreationForm
 from django import forms
 from profiles import models
-from django.contrib.auth.models import User
+from django.core.validators import RegexValidator
+import re
+
+phone_re = re.compile(r'^[\d]{10}$')
+phone_validator = RegexValidator(regex=phone_re, message='Invalid phone number')
 
 class MenteeForm(forms.ModelForm):
     CHOICES = (
@@ -10,8 +13,8 @@ class MenteeForm(forms.ModelForm):
         ('1999', 'Expert Mentor & Customized Plan')
     )
     your_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Elon Musk'}))
-    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'1234567890'})) #validators=[phone_validator])
-    parents_contact_number = forms.CharField(max_length=10,label = 'Parents Number:',widget=forms.NumberInput(attrs={'class':'input100','placeholder':'1234567890'})) #validators=[phone_validator])   
+    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'10 digit number(without +91)'}),validators=[phone_validator])
+    parents_contact_number = forms.CharField(max_length=10,label = 'Parents Number:',widget=forms.NumberInput(attrs={'class':'input100','placeholder':'10 digit number(without +91)'}),validators=[phone_validator])   
     location = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'City'}))
     referred_by = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'How do you get to know about us ?'}),required=True)
     promocode = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Promocode if any ?'}),required=False)
@@ -28,8 +31,6 @@ class MenteeForm(forms.ModelForm):
             'promocode',
             'mentor_code',
         ]
-
-
 # class MentorForm(forms.ModelForm):
 #     your_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Elon Musk'}))
 #     contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'123467890'})) # validators=[phone_validator])
@@ -38,9 +39,6 @@ class MenteeForm(forms.ModelForm):
 #     location = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Ludhiana'}))
 #     why_mentor = forms.CharField(max_length=10000, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Why do you think you will be a good mentor?'}))
 #     linkedin_id = forms.URLField(max_length=1000, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Paste Linkedin Profile link else Leave empty if no profile'}),required= False)
-
-    
-
     
 #     class Meta:
 #         model = models.MentorData
