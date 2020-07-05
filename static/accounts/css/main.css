@@ -186,7 +186,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 43px 40px 93px 150px;
+  padding: 43px 40px 23px 150px;
 }
 /*------------------------------------------------------------------
 [ Input ]*/
@@ -348,7 +348,7 @@ input.input100 {
 
 @media (max-width: 576px) {
   .login100-form {
-    padding: 43px 15px 57px 117px;
+    padding: 43px 15px 40px 117px;
   }
   .container-login100-form-btn{
     padding-left: 60px;
@@ -357,7 +357,7 @@ input.input100 {
 
 @media (max-width: 480px) {
   .login100-form {
-    padding: 43px 15px 57px 15px;
+    padding: 43px 15px 40px 15px;
   }
 
   .label-input100 {

@@ -14,7 +14,20 @@
 </head>
 <body>
 	{% include "profiles/parts/navbarHome.html" %}
-
+	<style>
+		.termsreg{
+			text-align: center;
+			font-size: 0.79rem;
+			padding-bottom:80px;
+		}
+		.termsrega{
+			color: #51BDF7;
+			font-weight: 500;
+		}
+		.termsrega:hover{
+			color: #1D34B9 !important;
+		}
+	</style>
 
 	<div class="limiter">
 		<div class="container-login100">
@@ -54,11 +67,11 @@
 						</button>
 					</div>
 				</form>
+				<p class="termsreg">By clicking Register, you agree to our <strong><a href="{% url 'profiles:terms'%}" target="_blank" class="termsrega">Terms and Conditions.</a></strong></p>
 			</div>
 		</div>
 	</div>
 	{% include "profiles/parts/footerHome.html" %}
-	<script src="/static/accounts/js/main.js"></script>
 </body>
 
 </html>

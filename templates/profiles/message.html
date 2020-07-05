@@ -16,10 +16,21 @@
 
 <body>
   {% include 'profiles/parts/navbarHome.html' %}
-
+  <style>
+    .lsmessage{
+      padding :250px 0px;
+      margin: 0;
+      background-color: white !important;
+    }
+    @media only screen and (max-width: 600px){
+      .lsmessage{
+      padding :150px 0px;
+      }
+    }
+  </style>
   <!--- Banner Hero section ------->
   <section>
-    <div class="jumbotron text-center" style="padding: 250px 0px; margin:0; background-color: white;">
+    <div class="jumbotron text-center lsmessage">
       <div class="display-4">Thank You!</div>
       <span class="lead">for your response. Our team will revert back to you shortly.
       </span>

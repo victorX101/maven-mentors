@@ -2,12 +2,16 @@
 .owl-carousel {
   display: none;
   width: 100%;
-  margin: 0px 20px;
+  margin:0px 30px;
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
   z-index: 1; }
-
+  @media only screen and (max-width: 350px){
+    .owl-carousel{
+      margin: 0px 15px;
+    }
+  }
   .owl-carousel .owl-stage {
     position: relative;
     -ms-touch-action: pan-Y;
@@ -82,7 +86,7 @@
 }
 .owl-dots{
   text-align: center;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 .owl-dot{
   height: 15px;
