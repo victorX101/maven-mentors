@@ -16,8 +16,7 @@ class MenteeData(models.Model):
     # When we call the object it returns name rather than a string with this str method.
     def __str__(self):
         return self.your_name
-
-
+           
 # class MentorData(models.Model):
 #     your_name = models.CharField(max_length=100, null=True)
 #     contact_number = models.CharField(max_length=10)

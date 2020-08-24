@@ -641,3 +641,60 @@ body{
   .termpoints li{
     padding: 10px 0px;
   }
+  /* CODING FOR KIDS */
+  #coding-kids{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* background-color: #F4FDFF; */
+    background-color: ;
+    background-color: #FAFAFA;
+  }
+  .coding-title{
+    font-weight: 800;
+    padding-top: 1rem;
+    font-size: 2.3rem;
+    color: #ff9022;
+  }
+  .list-coding{
+    list-style-type: none;
+  }
+  .class-title{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 0.6rem;
+    font-weight: 800;
+    color: #ff9022 ;
+  }
+  .fa-check-square-o{
+    color: #ff9022 ;
+    padding-right: 2vh;
+  }
+  .list-div{
+    padding-left: 3rem !important;
+  }
+  .list-coding li{
+    color: #686767;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .high-rupee{
+    padding-left: 1rem;
+    text-decoration: line-through;
+    font-size: 1.6rem !important;
+  }
+  .low-rupee{
+    color: black;
+    font-size: 2.5rem;
+    padding-bottom: 0;
+  }
+  .under-text{
+    font-weight: 600 !important;
+    color: #3c88f1 !important;
+    font-size: 1rem !important;
+  }
+
+  /* FOR mobile phones */
+
+  @media only screen and (max-width: 600px){
+    
+  }
