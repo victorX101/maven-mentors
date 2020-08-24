@@ -9,6 +9,6 @@ urlpatterns = [
     path('terms/',views.terms,name='terms'),
     path('mentor/registration/',views.mentorreg,name='mentorreg'),
     path('ca/registration/',views.carreg,name='careg'),
-    
+    path('coding/registration/',views.codingreg,name='codingreg'),
 ]
 

@@ -46,3 +46,6 @@ def carreg(request):
     # else:
     #     form = forms.AmbassadorForm()
     #     return render(request,'profiles/ambassador/registration.html',context={'form':form})    
+
+def codingreg(request):
+    return redirect('https://docs.google.com/forms/d/e/1FAIpQLSdvijIapiHturNRM4cM4gumc860q0ZMus40APEo8ypGzOXV5Q/viewform?usp=sf_link')

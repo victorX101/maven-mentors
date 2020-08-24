@@ -95,7 +95,6 @@ body{
   color: #58f0ff;
   text-decoration: none !important;
 }
-.btn-register
 .play-btn {
   width: 45px;
   margin: 20px 0;
@@ -147,7 +146,7 @@ body{
 #about {
   background-color: #fff;
   padding-bottom: 3.5rem;
-  padding-top: 3.5rem;
+  padding-top: 2rem;
 }
 .about-text{
   padding-top: 30px; 
@@ -561,33 +560,22 @@ body{
     width: auto;
     font-weight: 600;
     cursor: pointer;
-    font-size: 18px;
-    text-transform: uppercase;
-    opacity: 1;
-    line-height: 1;
+    font-size: 1.3rem;
     text-align: center;
     display: inline-flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
-    background: rgb(236, 47, 18) !important;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(255, 255, 255);
-    border-image: initial;
+    animation: c 53s linear infinite !important;
+    background: linear-gradient(121.19deg,rgba(133,239,49,0) 25.73%,hsla(0,0%,100%,.3) 45.27%,rgba(133,239,49,0) 62.27%),rgb(231, 61, 35);
+    border: 2px solid white;
     border-radius: 3px;
     outline: none;
-    padding: 16px 32px;
+    padding: 10px 32px;
     box-shadow: 3px 3px #888;
   }
-  .btn-register:hover {
-    font-weight: 700 !important;
+  .btn-register:hover{
     color: white;
-    letter-spacing: 3px;
-    background: rgb(231, 39, 9) !important;
-    transition: all ease 0.3s;
   }
+  
   #register-section {
     background-color: #1c0c35;
     height: 45vh;
@@ -645,8 +633,6 @@ body{
   #coding-kids{
     padding-top: 2rem;
     padding-bottom: 2rem;
-    /* background-color: #F4FDFF; */
-    background-color: ;
     background-color: #FAFAFA;
   }
   .coding-title{
@@ -676,6 +662,7 @@ body{
     color: #686767;
     font-weight: 600;
     font-size: 1.2rem;
+    text-indent: -1rem;
   }
   .high-rupee{
     padding-left: 1rem;
@@ -686,15 +673,50 @@ body{
     color: black;
     font-size: 2.5rem;
     padding-bottom: 0;
+    padding-right: 0.7rem;
   }
   .under-text{
     font-weight: 600 !important;
     color: #3c88f1 !important;
     font-size: 1rem !important;
+    padding-bottom: 10px;
   }
-
+  .book-button{
+    animation: c 53s linear infinite;
+    background: linear-gradient(121.19deg,rgba(133,239,49,0) 25.73%,hsla(0,0%,100%,.3) 45.27%,rgba(133,239,49,0) 62.27%),#ff8d1a;
+    color: white;
+    border: none;
+    font-weight: 800;
+    padding: 0.7rem 2.55rem;
+    height: 50px;
+    width: 250px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .book-button:hover{
+    color: white;
+    text-decoration: none;
+  }
+  @keyframes c {0%{background-position:-5000px 0}to{background-position:5000px 0}}
   /* FOR mobile phones */
-
   @media only screen and (max-width: 600px){
-    
+    .list-coding li{
+      font-size: 1rem;
+    }
+    .coding-title{
+      font-size: 2.1rem;
+    }
+    .rupee{
+      padding-left: 1rem;
+    }
+    .under-text{
+      font-size: 0.9rem !important;
+    }
+    .btn-register{
+      padding:8px 25px;
+    }
+    .book-row{
+      padding-bottom: 30px;
+    }
   }
