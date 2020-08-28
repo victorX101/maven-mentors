@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maven Mentors - Get a Mentor after JEE , Programming for class 8th-12th</title>
   <link rel="stylesheet" href="/static/base/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/static/base/css/owl.carousel.css">
@@ -32,17 +33,20 @@
     <img src="/static/base/images/ground@-min.png" class="bottom-img" alt="" id="register">
   </section>
 
-
-    <div id="pop-up-content" class="text-center">
+  <!-- POP UP -->
+    <!-- <div id="pop-up-content" class="text-center">
       <h3>Special Coding Classes</h3>
       <h4 >For Classes 8th &amp; Above</h4>
+      <p class="register-before">Register Before 10th September </br>and get 10% OFF</p>
+      <p class="popup-rupee"><span class="pop-low-rupee"><i class="fa fa-inr"></i>1,349</span><span class="pop-high-rupee"><i class="fa fa-inr"></i>1,500</p>
       <a href="{% url 'profiles:codingreg' %}" class="book-button movingb">Book A FREE Trial</a>
     </div>
-  <div id="mask"></div>
+  <div id="mask"></div> -->
+
   <!-- Coding for kids  -->
 
   <section id="coding-kids">
-    <div class="container">
+    <div class="container" >
       <h3 class="text-center coding-title">SPECIAL CODING CLASSES</h3>
       <div class="row">
         <div class="col-lg-4 col-md-5 order-md-1 coding-image">
@@ -57,8 +61,8 @@
             <li><i class="fa fa-check-square-o"></i>Focus on Developing Creative and Algorithmic thinking.</li>
             <li><i class="fa fa-check-square-o"></i>Student projects to learn in more fun and interative way.</li>
             <li><i class="fa fa-check-square-o"></i>Learn basics of Web Development and coding in C++ / Python.</li>
-            <li style="padding-top: 0.7rem;" class="rupee"><span class="low-rupee"><i class="fa fa-inr"></i>1,199</span><span class="high-rupee"><i class="fa fa-inr"></i>1,529</span></li>
-            <li class="under-text">20% OFF for First Batch starting from 10th September.</li>
+            <li style="padding-top: 0.7rem;" class="rupee"><span class="low-rupee"><i class="fa fa-inr"></i>1,349</span><span class="high-rupee"><i class="fa fa-inr"></i>1,500</span></li>
+            <li class="under-text">Register Before 10th September to get this 10% OFF</li>
           </ul>
           <div class="book-row">
           <a href="{% url 'profiles:codingreg' %}" class="book-button movingb">Book A FREE Trial</a>
@@ -95,9 +99,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 order-md-2 justify-content-center">
-          <img src="/static/base/images/why this.png" alt="What after JEE ? Get special mentorship for JOSAA after JEE" class="img-fluid pb-5 pb-md-0" style="padding: 0 20px">
+          <img src="/static/base/images/why this.png" alt="What after JEE ? Get special mentorship for JOSAA after JEE" class="img-fluid pb-5 pb-md-0" style="padding: 0 20px" data-aos="fade-left">
         </div>
-        <div class="col-md-8 order-md-1">
+        <div class="col-md-8 order-md-1" data-aos="fade-right">
           <h3 class="why-this-title">WHY THIS AFTER JEE ?</h3> 
           <p class="why-this-text" style="text-align: left;">
             The next <b>Big Question</b> After JEE Exams in every mind is the selection of a branch. As they were busy with JEE Preparation they are now not able to decide their major
@@ -120,15 +124,15 @@
 
     <section id="main-part" style="background-color: #fff;">
     <div class="container">
-      <h3 class="title text-center programme-title" style="padding-top: 5rem; padding-bottom: 5rem font-size: 2.1rem;">WHAT'S IN OUR PROGRAMME ?</h3>
+      <h3 class="title text-center programme-title" style="padding-top: 5rem; padding-bottom: 5rem font-size: 2.1rem;"  data-aos="zoom-in">WHAT'S IN OUR PROGRAMME ?</h3>
       
       
       
       <div class="row firsta pl-5 pr-5">
         <div class="col-md-4">
-          <img src="/static/assets/visit-arc.svg" class = "img-fluid pl-0" alt="What after JEE ? Get special mentorship for JOSAA after JEE">
+          <img src="/static/assets/visit-arc.svg" class = "img-fluid pl-0" alt="What after JEE ? Get special mentorship for JOSAA after JEE"  data-aos="fade-right">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8" data-aos="fade-left">
           <h3 class="firsta-title pt-md-5">One to One Personal Mentorship</h3>
           <p class="firsta-text"> All Education systems depend on comparison but at Maven Mentors we believe that every individual is unique and have separate interests which may
             or may not match with others. Thus we provide you a personal Mentor who will take care of your Uniqueness.
@@ -140,9 +144,9 @@
       
       <div class="row firsta pl-5 pr-5">
         <div class="col-md-4 order-md-2">
-          <img src="/static/base/images/josaa.jpg" class = "img-fluid pl-0" alt="What after JEE ? Get special mentorship for JOSAA after JEE">
+          <img src="/static/base/images/josaa.jpg" class = "img-fluid pl-0" alt="What after JEE ? Get special mentorship for JOSAA after JEE"  data-aos="fade-left">
         </div>
-        <div class="col-md-8 order-md-1">
+        <div class="col-md-8 order-md-1" data-aos="fade-right">
           <h3 class="firsta-title second-pa">JOSAA &amp; Branch Selection</h3>
           <p class="firsta-text"> Our Mentors will give you a breif idea of every branch and help you find what interests you the most. They will sort 
             all your queries so that you can fill your JOSAA preferences in most efficient way.
@@ -155,9 +159,9 @@
       
       <div class="row firsta pl-5 pr-5">
         <div class="col-md-4 order-md-1">
-          <img src="/static/base/images/program.jpg" class = "img-fluid pl-0" alt="What after JEE ? Get special mentorship for JOSAA after JEE">
+          <img src="/static/base/images/program.jpg" class = "img-fluid pl-0" alt="What after JEE ? Get special mentorship for JOSAA after JEE"  data-aos="fade-right">
         </div>
-        <div class="col-md-8 order-md-2">
+        <div class="col-md-8 order-md-2" data-aos="fade-left">
           <h3 class="firsta-title pt-md-5">Learn Programming &amp; Finance</h3>
           <p class="firsta-text">
             If you take our Premiere Plan your mentor will also have the responsibility to introduce you to computing ,help you learn basics of programming 
@@ -168,9 +172,9 @@
 
       <div class="row firsta pl-5 pr-5">
         <div class="col-md-4 order-md-2 text-center">
-          <img src="/static/base/images/81688.png" class = "img-fluid pl-0 align-self-center" style="height: 350px; width: 200px;" alt="What after JEE ? Get special mentorship for JOSAA after JEE">
+          <img src="/static/base/images/81688.png" class = "img-fluid pl-0 align-self-center" style="height: 350px; width: 200px;" alt="What after JEE ? Get special mentorship for JOSAA after JEE" data-aos="fade-left">
         </div>
-        <div class="col-md-8 order-md-1">
+        <div class="col-md-8 order-md-1" data-aos="fade-right">
           <h3 class="firsta-title-app firsta-title">Our Exclusive App &amp; Rating System</h3>
           <p class="firsta-text">
             We believe that Quality is very important in mentorship thus we have our own App for your conversations through which we can monitor and ensure that the mentor 
@@ -344,6 +348,15 @@
 
   {% include "profiles/parts/footerHome.html" %}
   <script src="/static/base/js/owl.carousel.min.js"></script>
+  <script src = "https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init({
+      delay:0,
+      disable:'mobile',
+      once:true,
+      duration: 1000,
+     });
+  </script>
   <script>
     $('.owl-carousel').owlCarousel({
       margin:20,
@@ -363,17 +376,6 @@
           }
       }
   })
-  </script>
-
-  <script>
-    $(document).ready(function(){
-      var maskWidth = $(window).width();
-      var maskHeight = $(document).height();
-      if(maskWidth > 700)
-      {
-        $('#mask').css({'width':maskWidth,'height':maskHeight});
-      }
-    });
   </script>
   <!-- Attributes to freepik and other sites for vectors  -->
   <!-- <a href="https://www.freepik.com/free-photos-vectors/people">People vector created by pch.vector - www.freepik.com</a> -->

@@ -6,6 +6,9 @@ html{
   padding: 0;
   font-family: 'Nunito Sans', sans-serif !important;
 }
+/* *{
+  border: 1px solid red !important;
+} */
 body{
   font-family: 'Nunito Sans', sans-serif !important;
   background: repeating-linear-gradient(45deg , #fff 0% 20%, rgb(231, 231, 231) 20% 40%,#fff 40%);
@@ -781,7 +784,17 @@ body{
 }
 #pop-up-content h4{
   padding-bottom: 20px;
-  color: #3c88f1;
+  color: #678AF1;
   font-size: 1rem;
   font-weight: 600;
+}
+#pop-up-content .register-before{
+  color: #678AF1;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#pop-up-content .popup-rupee{
+  padding-bottom: 20px;
+  color: #0686E4 !important;
+  font-weight: 700;
 }
