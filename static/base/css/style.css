@@ -13,6 +13,9 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: -1000;
 }
 #nav-bar {
   position: sticky;
@@ -398,11 +401,11 @@ body{
 }
 .team-title{
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
 
 }
 .team-row{
-  padding: 10rem 0rem 5rem 0rem;
+  padding: 5rem 0rem;
 }
 .team-name{
   text-transform: uppercase;
@@ -416,19 +419,15 @@ body{
   color: rgb(71, 71, 71);
   }
 .team-image{
-  width: 60%;
+  width: 50%;
   height: 193px;
   padding: 20px 0px;
   border-radius: 50%;
   align-items: center;
   
 }
-.card-img-top{
-  margin: 0% 20%;
-}
 .team-card {
   background: rgb(255, 255, 255);
-  width: 280px;
   padding: 10px;
   box-shadow: 0 0.5rem 1.2rem 0.2rem rgba(0, 0, 0, 0.3);
   transition: all 0.5s;
@@ -447,12 +446,19 @@ body{
   padding:0;
   margin: 0;
 }
-@media only screen and (max-width:768px){
+@media only screen and (min-width:768px){
   .team-title{
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .team-row{
-    padding-top: 5rem;
+    padding-top: 10rem;
+  }
+  .team-card{
+    width: 286px;
+  }
+  .team-image{
+    height: 200px;
+    width: 60%;
   }
 }
 /* ----- Footer ------*/
@@ -564,18 +570,20 @@ body{
     text-align: center;
     display: inline-flex;
     justify-content: center;
-    animation: c 53s linear infinite !important;
-    background: linear-gradient(121.19deg,rgba(133,239,49,0) 25.73%,hsla(0,0%,100%,.3) 45.27%,rgba(133,239,49,0) 62.27%),rgb(231, 61, 35);
+    background: rgb(231, 61, 35);
     border: 2px solid white;
     border-radius: 3px;
     outline: none;
     padding: 10px 32px;
     box-shadow: 3px 3px #888;
   }
+  .movingbr{
+    animation: c 53s linear infinite !important;
+    background: linear-gradient(121.19deg,rgba(133,239,49,0) 25.73%,hsla(0,0%,100%,.3) 45.27%,rgba(133,239,49,0) 62.27%),rgb(231, 61, 35);
+  }
   .btn-register:hover{
     color: white;
   }
-  
   #register-section {
     background-color: #1c0c35;
     height: 45vh;
@@ -682,8 +690,7 @@ body{
     padding-bottom: 10px;
   }
   .book-button{
-    animation: c 53s linear infinite;
-    background: linear-gradient(121.19deg,rgba(133,239,49,0) 25.73%,hsla(0,0%,100%,.3) 45.27%,rgba(133,239,49,0) 62.27%),#ff8d1a;
+    background: #ff9022;
     color: white;
     border: none;
     font-weight: 800;
@@ -693,6 +700,10 @@ body{
     font-size: 1.2rem;
     border-radius: 5px;
     cursor: pointer;
+  }
+  .movingb{
+    animation: c 53s linear infinite;
+    background: linear-gradient(121.19deg,rgba(133,239,49,0) 25.73%,hsla(0,0%,100%,.3) 45.27%,rgba(133,239,49,0) 62.27%),#ff8d1a;
   }
   .book-button:hover{
     color: white;
@@ -720,3 +731,57 @@ body{
       padding-bottom: 30px;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS For pop-up-window */
+#mask{
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(58, 58, 58, 0.61);
+  opacity: 0.6;
+  z-index: 9000;
+}
+#pop-up-content{
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: 0 0.5rem 1.6rem 0 rgb(41, 41, 41);
+}
+#pop-up-content h3{
+  color: #ff9022;
+  font-weight: 800;
+  padding-top: 20px ;
+}
+#pop-up-content h4{
+  padding-bottom: 20px;
+  color: #3c88f1;
+  font-size: 1rem;
+  font-weight: 600;
+}
