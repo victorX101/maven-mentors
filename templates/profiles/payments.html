@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments | Maven Mentors</title>
+    <link rel="stylesheet" href="/static/base/css/style.css">
+    <link rel="shortcut icon" href="/static/assets/logomini.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body style="background: white;">
+    {% include "profiles/parts/navbarHome.html" %}
+<section id="payments">
+    <div class="container payment-container" >
+        <h2 class="title text-center title-payment" >PAYMENTS DETAILS</h2>
+        <h3 class="queries-payments text-center">For any queries regarding payments feel free to contact us at (+91) 9306020545</h3>
+        <hr>
+        <div class="row qr-row pl-4 pl-md-0">
+            <div class="offset-md-2 col-md-4 bankcol">
+            <p class="top">Pay via Bank Transfer</p>
+            <p class="bottom">Name:&ensp; Himanshu Arora<br>
+               Accout No: &ensp;38747602631<br>
+               IFSC Code: &ensp;SBIN0013181<br>
+               Bank Name: &ensp;State Bank Of India</p>
+            </div>
+            <div class="offset-md-1 col-md-4 d-none d-md-block pl-md-5">
+                <img src="/static/base/images/QR-Code.jpeg" alt="" width="277px" height="320px">
+            </div>
+        </div>
+        <div class="row pl-4 pl-md-0">
+            <div class="offset-md-2 bankcol">
+            <p class="top">Pay via UPI</p>
+            <p class="bottom">Name:&ensp; Himanshu Arora<br>
+             UPI ID:&ensp; 9306020545@paytm<br>
+             UPI ID:&ensp; himanshu2309jarvis@oksbi<br>
+             <span class="apps-pay">You can Pay using any UPI Apps on these UPI IDs.</span>
+            </div>
+        </div>
+        <div class="row pl-4 pl-md-0">
+            <div class="offset-md-2 bankcol">
+            <p class="top">Pay via GooglePay, PhonePe , Paytm</p>
+            <p class="bottom">Name:&ensp; Himanshu Arora<br>
+             Number:&ensp; +919306020545
+            </div>
+        </div>
+        <hr>
+        <h3 class="proofp px-2 px-md-5 text-center">Please <a href="{% url 'profiles:menteereg' %}">Register Here</a> (For After JEE Classes) and <a href="{% url 'profiles:codingreg' %}"> 
+        Register Here</a> ( For Coding Classes )if you haven't registered yet.<br>Please Mail a screenshot of your payment
+        proof to <span style="color: rgb(199, 0, 0); font-weight: 700;">info@mavenmentors.in</span> for future references.</h3>
+
+    </div>
+</section>
+
+
+
+
+    {% include "profiles/parts/footerHome.html" %}
+</body>
+</html>

@@ -2,9 +2,9 @@ from django.db import models
 
 class MenteeData(models.Model):
     CHOICES = (
-        ('1199', 'JOSAA + Basic Programming & Finance' ),
+        ('1349', 'Programming for Class 8th & Above'),
+        ('1799', 'JOSAA + Basic Programming & Finance' ),
         ('750', 'Basic Plan for JOSAA' ),
-        ('1999', 'Expert Mentor & Customized Plan')
     )
     your_name = models.CharField(max_length=100)
     contact_number = models.CharField(max_length=10)

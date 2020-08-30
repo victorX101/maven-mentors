@@ -8,9 +8,9 @@ phone_validator = RegexValidator(regex=phone_re, message='Invalid phone number')
 
 class MenteeForm(forms.ModelForm):
     CHOICES = (
-        ('1199', 'JOSAA + Basic Programming & Finance' ),
+        ('1349', 'Programming for Class 8th & Above'),
+        ('1799', 'JOSAA + Programming' ),
         ('750', 'Basic Plan for JOSAA' ),
-        ('1999', 'Expert Mentor & Customized Plan')
     )
     your_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Elon Musk'}))
     contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'10 digit number(without +91)'}),validators=[phone_validator])
