@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'zu1n19r+u7ms57#e0#*l#3j@h&9*^^5%vc8@tvh^+%886n-#oc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 # When Empty allowed hosts is configured to 127.0.0.1 localhost and [::1] * allows it for all the urls requested and we are responsible for any web url poisoning attacks.
