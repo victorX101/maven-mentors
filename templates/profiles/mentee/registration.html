@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/static/accounts/css/main.css">
 	<link rel="stylesheet" href="/static/base/css/style.css">
-	<link rel="shortcut icon" href="/static/assets/logomini.png">	
+	<link rel="shortcut icon" href="/static/assets/logomini.png">
+	<meta name="theme-color" content="#0686E4">
 </head>
 <body>
 	{% include "profiles/parts/navbarHome.html" %}
@@ -32,10 +33,8 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url(/static/assets/signup.png);">
-					<span class="login100-form-title-1">
-						MENTEE REGISTRATION
-					</span>
+				<div>
+					<img src="/static/assets/Studio_Project.jpeg" class="login-image" alt="Maven Mentors - Get IITian Mentor after JEE, Live Online Coding for Class 8th & above">
 				</div>
 
 				<form class="login100-form validate-form" method="POST" action="/mentee/registration/">
@@ -61,6 +60,69 @@
 
 					</tr>
 					{% endfor %}
+					<!-- <tr>
+						<div class="wrap-input100 validate-input" style="margin-bottom: 26px;" data-validate="">
+							<span class="label-input100"><label for="id_your_name">Your name:</label></span>
+							<input type="text" name="your_name" class="input100" placeholder="Elon Musk" maxlength="100" required id="id_your_name">
+							<span class="focus-input100"></span>
+						</div>
+
+					</tr>
+					
+					<tr>
+						<div class="wrap-input100 validate-input" style="margin-bottom: 26px;" data-validate="">
+							<span class="label-input100"><label for="id_contact_number">Contact number:</label></span>
+							<input type="number" name="contact_number" class="input100" placeholder="10 digit number(without +91)" maxlength="10" required id="id_contact_number">
+							<span class="focus-input100"></span>
+						</div>
+
+					</tr>
+					
+					<tr>
+						<div class="wrap-input100 validate-input" style="margin-bottom: 26px;" data-validate="">
+							<span class="label-input100"><label for="id_parents_contact_number">Parents Number:</label></span>
+							<input type="number" name="parents_contact_number" class="input100" placeholder="10 digit number(without +91)" maxlength="10" required id="id_parents_contact_number">
+							<span class="focus-input100"></span>
+						</div>
+
+					</tr>
+					
+					<tr>
+						<div class="wrap-input100 validate-input" style="margin-bottom: 26px;" data-validate="">
+							<span class="label-input100"><label for="id_location">Location:</label></span>
+							<input type="text" name="location" class="input100" placeholder="City" maxlength="100" required id="id_location">
+							<span class="focus-input100"></span>
+						</div>
+
+					</tr>
+					
+					<tr>
+						<div class="wrap-input100 validate-input" style="margin-bottom: 26px;" data-validate="">
+							<span class="label-input100"><label for="id_referred_by">Referred by:</label></span>
+							<input type="text" name="referred_by" class="input100" placeholder="How do you get to know about us ?" maxlength="100" required id="id_referred_by">
+							<span class="focus-input100"></span>
+						</div>
+
+					</tr>
+					
+					<tr>
+						<div class="wrap-input100 validate-input" style="margin-bottom: 26px;" data-validate="">
+							<span class="label-input100"><label for="id_promocode">Promocode:</label></span>
+							<input type="text" name="promocode" class="input100" placeholder="Promocode if any ?" maxlength="100" id="id_promocode">
+							<span class="focus-input100"></span>
+						</div>
+					</tr>
+					<tr>
+						<div class="wrap-input100 validate-input" style="margin-bottom: 26px;" data-validate="">
+							<span class="label-input100"><label for="id_mentor_code">Select a Plan:</label></span>
+							<select name="mentor_code" class="input100" placeholder="Year" id="id_mentor_code">
+  								<option value="1349">Programming for Class 8th &amp; Above</option>
+ 								 <option value="1799">JOSAA + Programming</option>
+ 								 <option value="750">Basic Plan for JOSAA</option>
+							</select>
+							<span class="focus-input100"></span>
+						</div>
+					</tr> -->
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
 							REGISTER

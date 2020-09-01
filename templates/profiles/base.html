@@ -11,15 +11,14 @@
   <meta property="og:url" content="https://mavenmentors.in" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://mavenmentors.in/static/base/images/bane_opt (1).png" />
-  <meta name="theme-color" content="#fff">
+  <meta name="theme-color" content="#0686E4">
   <!-- Links -->
 
   <title>Maven Mentors | Get IITian Mentor after JEE , Live Online Coding for Class 8th & above</title>
   <link rel="stylesheet" href="/static/base/css/style.css">
-  <link rel="stylesheet" href="/static/base/css/style12.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="/static/base/css/owl.carousel.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="/static/assets/logomini.png">
@@ -49,7 +48,7 @@
       <h4 >For Classes 8th &amp; Above</h4>
       <p class="register-before">Register Before 10th September </br>and get 10% OFF</p>
       <p class="popup-rupee"><span class="pop-low-rupee"><i class="fa fa-inr"></i>1,349</span><span class="pop-high-rupee"><i class="fa fa-inr"></i>1,500</p>
-      <a href="{% url 'profiles:codingreg' %}" class="book-button movingb">Book A FREE Trial</a>
+      <a href="#" class="book-button movingb">Book A FREE Trial</a>
     </div>
   <div id="mask"></div> -->
 
@@ -76,7 +75,7 @@
             <li class="under-text">Register Before 10th September to get this 10% OFF</li>
           </ul>
           <div class="book-row">
-          <a href="{% url 'profiles:codingreg' %}" class="book-button movingb">Book A FREE Trial</a>
+          <a href="{% url 'profiles:menteereg' %}" class="book-button movingb">Book A FREE Trial</a>
         </div>
         </div>
       </div>
@@ -284,7 +283,7 @@
                     <li>Well designed 12 classes curriculum</li>
                     <li>Coding Foundation Certificate</li>
                     <li>Weekly Rating of Mentor</li>
-                      <a href= "https://docs.google.com/forms/d/e/1FAIpQLSdvijIapiHturNRM4cM4gumc860q0ZMus40APEo8ypGzOXV5Q/viewform?usp=sf_link" target="_blank" class="hvr-sweep-to-right">Book A FREE Session</a>
+                      <a href= "{% url 'profiles:menteereg' %}" target="_blank" class="hvr-sweep-to-right">Book A FREE Session</a>
                     </li>
                   </ul>
                 </div>

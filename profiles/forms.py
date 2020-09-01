@@ -12,24 +12,32 @@ class MenteeForm(forms.ModelForm):
         ('1799', 'JOSAA + Programming' ),
         ('750', 'Basic Plan for JOSAA' ),
     )
-    your_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Elon Musk'}))
-    contact_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'10 digit number(without +91)'}),validators=[phone_validator])
-    parents_contact_number = forms.CharField(max_length=10,label = 'Parents Number:',widget=forms.NumberInput(attrs={'class':'input100','placeholder':'10 digit number(without +91)'}),validators=[phone_validator])   
+    choice = (
+        ('Yes', 'Yes, I have a laptop/PC for classes'),
+        ('No', 'No, I dont have a Laptop/PC' ),
+        ('will arrange','I will arrange a Laptop/PC for classes' ),
+    )
+    students_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Elon Musk'}),label= "Student\'s name")
+    students_number = forms.CharField(max_length=10, widget=forms.NumberInput(attrs={'class':'input100','placeholder':'10 digit number(without +91)'}),validators=[phone_validator],label= "Student\'s number")
+    parents_number = forms.CharField(max_length=10,label = 'Parents Number:',widget=forms.NumberInput(attrs={'class':'input100','placeholder':'10 digit number(without +91)'}),validators=[phone_validator])   
     location = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'City'}))
+    school = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Type NA if you are 12th passout'}),required=True)
     referred_by = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'How do you get to know about us ?'}),required=True)
     promocode = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Promocode if any ?'}),required=False)
     mentor_code = forms.ChoiceField(widget=forms.Select(attrs={'class':'input100','placeholder':'Year'}),choices=CHOICES, label="Select a Plan",required=True )
-
+    laptop = forms.ChoiceField(widget=forms.Select(attrs={'class':'input100','placeholder':'Year'}),choices=choice, required = True , label="Please Select one")
     class Meta:
         model = models.MenteeData
         fields = [
-            'your_name',
-            'contact_number',
-            'parents_contact_number',
+            'students_name',
+            'students_number',
+            'parents_number',
             'location',
+            'school',
             'referred_by',
             'promocode',
             'mentor_code',
+            'laptop',
         ]
 # class MentorForm(forms.ModelForm):
 #     your_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class':'input100','placeholder':'Elon Musk'}))

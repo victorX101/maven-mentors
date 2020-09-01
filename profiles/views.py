@@ -27,10 +27,7 @@ def terms(request):
     return render(request,'profiles/terms.html')
 
 def carreg(request):
-    return redirect('https://forms.gle/iHz63nJvF7yCtMgk6')  
-
-def codingreg(request):
-    return redirect('https://docs.google.com/forms/d/e/1FAIpQLSdvijIapiHturNRM4cM4gumc860q0ZMus40APEo8ypGzOXV5Q/viewform?usp=sf_link')
+    return redirect('https://forms.gle/iHz63nJvF7yCtMgk6') 
 
 
 def payments(request):
