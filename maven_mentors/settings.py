@@ -81,10 +81,10 @@ if(not DEBUG):
     DATABASES = {
     'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'mavenmentorsdb',
-        'USER': 'cloud_maven',
-        'PASSWORD': 'mavenmentors123$',
-        'HOST': 'mavenmentorsdb.co08zlbcyrwg.us-east-2.rds.amazonaws.com',
+            'NAME': 'mavenmentorsdb12',
+        'USER': 'cloudmavenmentor',
+        'PASSWORD': 'thenextpassword123$',
+        'HOST': 'mavenmentorsdb12.co08zlbcyrwg.us-east-2.rds.amazonaws.com',
         'PORT': '3306',
         }
     }
