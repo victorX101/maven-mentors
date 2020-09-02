@@ -10,6 +10,5 @@ urlpatterns = [
     path('mentor/registration/',views.mentorreg,name='mentorreg'),
     path('ca/registration/',views.carreg,name='careg'),
     path('payments/' , views.payments,name ='payments'),
-    path('check/',views.check,name = 'check'),
 ]
 

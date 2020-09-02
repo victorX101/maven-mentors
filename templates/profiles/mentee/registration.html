@@ -37,7 +37,7 @@
 					<img src="/static/assets/Studio_Project.jpeg" class="login-image" alt="Maven Mentors - Get IITian Mentor after JEE, Live Online Coding for Class 8th & above">
 				</div>
 
-				<form class="login100-form validate-form" method="POST" action="/check/">
+				<form class="login100-form validate-form" method="POST" action="/mentee/registration/">
 					{% csrf_token %}
 					{% if form.errors or error_msg %}
 					<div class="errorMsg">
