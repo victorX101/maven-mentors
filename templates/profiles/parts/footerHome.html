@@ -21,7 +21,9 @@
         <hr>
         <p><a href=" {% url 'profiles:careg' %} "><i class="fa fa-angle-right"></i>BE AN AMBASSADOR</a></p>
         <hr>
-        <p><a href=" {% url 'profiles:terms' %} "><i class="fa fa-angle-right"></i>TERMS OF SERVICE</a></p>
+        <p><a href=" {% url 'profiles:terms' %} "><i class="fa fa-angle-right"></i>TERMS &amp; CONDITIONS</a></p>
+        <hr>
+        <p><a href=" {% url 'profiles:check' %} "><i class="fa fa-angle-right"></i>SERVICE</a></p>
         <hr>
         </div>
         
@@ -57,6 +59,7 @@
       $('.navbar').css('background', 'linear-gradient(to right, #1723b1, #58f0ff)');
   } else{
       $('.navbar').css('background', '#0686E4');
+      $("meta[name='theme-color']").attr('content', '#0686E4');
   }
 });
 </script>

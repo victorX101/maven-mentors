@@ -24,7 +24,6 @@ class Migration(migrations.Migration):
                 ('promocode', models.CharField(max_length=100)),
                 ('mentor_code', models.CharField(max_length=100)),
                 ('laptop', models.CharField(default='Yes,I have a laptop/PC for classes', max_length=100)),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
             ],
         ),
     ]
